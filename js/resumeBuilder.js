@@ -18,14 +18,14 @@ var projects = {
         {
             "title": "Online Application - ACC Respiratory Therapy Program",
             "dates": "February 2015 - present",
-            "description": "Create an online application for the Respiratory Therapy Program at Alvin Community College",
-            "images": ["http://www.lorempixel.com/50/60/"]
+            "description": "Create an online application for the Respiratory Therapy Program at Alvin Community College using skills learned in Udacity Frontend course",
+            "images": ["images/ACC-Alvin.jpg"]
         },
         {
             "title": "Satellite Scheduling Consolidation",
             "dates": "June 2000 - June 2001",
             "description": "Worked with group at Lockheed-Martin to consolidate 3 legacy systems into one.  The systems were used by NASA to schedule commercial satellite usage.",
-            "images": ["http://www.lorempixel.com/50/60/", "http://www.lorempixel.com/50/60/", "http://www.lorempixel.com/50/60/"]
+            "images": ["images/lm.jpg", "images/lm2.jpg"]
         }
     ]
 };
@@ -33,7 +33,6 @@ var projects = {
 // appending projects information
 projects.display = function () {
     var p1;
-    var txt = "";
     for (p1 in projects.project) {
         $("#projects").append(HTMLprojectStart);
 
@@ -72,7 +71,7 @@ var bio = {
         "location": "League City, Texas"
     },
     "skills": ["C#", "HTML", "Javascript", "MS SQL"],
-    "bioPic": "http://www.lorempixel.com/90/95/"
+    "bioPic": "images/Daniel.jpg"
 };
 
 // appending bio information
@@ -176,7 +175,6 @@ var education = {
 // appending education information
 education.display = function () {
     var e1, o1;
-    var txt = "";
 
     // iterate the schools
     for (e1 in education.schools) {
@@ -232,14 +230,14 @@ var work = {
             "title": "Programmer",
             "location": "Alvin, Texas",
             "dates": "April 2011 - present",
-            "description": "Assist with maintaining college ERP system, and also maintaining legacy ASP.NET custom software"
+            "description": "Assist with maintaining college ERP system which is a Ellucian product powered by a Unidata backend.  Also maintain custom developed ASP.NET software."
         },
         {
             "employer": "Lockheed-Martin",
             "title": "software engineer",
             "location": "Houston, Texas",
             "dates": "June 2000 - April 2011",
-            "description": "Maintain legacy code used by the Johnson Space Center ground control to interface with the international space station."
+            "description": "Worked with a group that maintained legacy software (Motif/C) used by the Johnson Space Center ground control to interface with the international space station."
         }
     ]
 };
@@ -247,7 +245,6 @@ var work = {
 // appending work information
 work.display = function() {
     var x1;
-    var txt = "";
     for (x1 in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
         var employer1 = HTMLworkEmployer.replace("%data%", work.jobs[x1].employer);

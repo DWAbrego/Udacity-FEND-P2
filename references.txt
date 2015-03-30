@@ -1,0 +1,10 @@
+Daniel Abrego
+Project 2 references
+
+Book: jQuery: Novice to Ninja: New Kicks And Tricks
+By Earle Castledine & Craig Sharkie
+
+Website: W3schools.com
+
+Website: Codeacademy-Jquery
+http://www.codecademy.com/en/tracks/jquery
